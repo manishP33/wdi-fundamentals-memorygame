@@ -1,5 +1,10 @@
+body {
+	background-image: url("image/background.png");
+	background-size: cover;
+}
+
 nav {
-	background-color: #808080;
+	background-color: #9370db;
 
 }
 
@@ -19,6 +24,7 @@ nav a {
 	display: block;
 	float: left;
 	text-decoration: none;
+	font-size: 20px;
 }
 
 a:hover {
@@ -31,7 +37,7 @@ a:hover {
 	display: inline-block;
 }
 
-.Card {
+.card {
 	width: 150px;
 	height: 200px;
 	border: 1px solid black;
@@ -39,12 +45,17 @@ a:hover {
 	border-radius: 10px;
 	float:left;
 	margin:8%;
+	background-image: url("image/card cover.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 20px 30px 5px 6px #78adad;
+	/*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
 }
 
 
 h1 {color: rgb(2,132,1);
 	text-align:center;
-	
+
 }
 	h2 {color: #ffd700;
 		text-align:center;
@@ -57,9 +68,16 @@ p {
 .information {
 	text-align: center;
 }
-.name {color:#ff0000;}
+.name {
+	color:#ff0000;
+}
 
 footer {
-	background-color:#808080;
+	background-color:#00ced1;
 	text-align:center;
+}
+
+ img {
+	width: 150px;
+	height: 200px;
 }
