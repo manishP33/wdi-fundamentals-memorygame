@@ -3,7 +3,8 @@ var cardsInPlay = [];
 
 var board = document.getElementById('game-board');
 function createBoard() {
-  for (var i=0; i<cards.length; i++) {
+  
+  for (var i =  0;i < cards.length; i++) {
     var cardElement = document.createElement('div');
     cardElement.className = 'card';
     cardElement.setAttribute('data-card', cards[i]);
@@ -18,10 +19,11 @@ function createBoard() {
 function isTwoCards() {
   cardsInPlay.push(this.getAttribute('data-card'));
 	console.log(this.getAttribute('data-card'));
+	
 	if (this.getAttribute('data-card') === 'king') {
-		this.innerHTML = "<img src='image/kingS.png'>";
+		this.innerHTML = "<img src='image/kingS.png' alt = 'King of clubs'>";
 	} else {
-		this.innerHTML = "<img src='image/queenS.png'>";
+		this.innerHTML = "<img src='image/queenS.png' alt = 'Queen of clubs'>";
 	}
   if (cardsInPlay.length === 2) {
     isMatch(cardsInPlay);
