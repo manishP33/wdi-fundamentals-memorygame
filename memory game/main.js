@@ -1,4 +1,6 @@
-var cards = ['queen', 'queen', 'king', 'king'];
+
+
+var cards = ['queen', 'king', 'queen', 'king', 'king', 'queen', 'king', 'queen', 'queen', 'king'];
 var cardsInPlay = [];
 
 var board = document.getElementById('game-board');
